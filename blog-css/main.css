@@ -1,0 +1,248 @@
+p {
+	font-family: 'Montserrat', sans-serif;
+	color: #888888;
+    margin: 0;
+    line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+/*-- -------------------------- -->
+<---           Header           -->
+<--- -------------------------- -*/
+
+#header {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url('../images/landscape.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+}
+
+#header h1 {
+    margin: 0;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    height: 40px;
+}
+
+/*-- -------------------------- -->
+<---            Blog            -->
+<--- -------------------------- -*/
+
+.blog {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blog__post--header img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.blog__post--header h2 {
+    color: #343434;
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+}
+
+.blog__post--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.blog__post--info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 18px;
+}
+
+.blog__post--info h3 {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100px;
+    margin: 0 !important;
+}
+
+.blog__post--profile a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #959595;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.line {
+    width: 100%;
+    background: var(--primary);
+    height: 1px;
+}
+
+.blog__post p {
+    margin-bottom: 25px;
+}
+
+/*-- -------------------------- -->
+<---          Side Bar          -->
+<--- -------------------------- -*/
+
+.popular {
+    color: #383838;
+    width: 180px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 35px;
+}
+
+.popular:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.recent-posts__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.recent-posts__item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.recent-posts__item h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.recent-posts__item h2:hover {
+    color: var(--primary);
+}
+
+.recent-posts__item h2 a {
+    text-decoration: none;
+}
+
+.recent-posts__item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+
+    #header {
+        height: 200px;
+        background-position: bottom;
+    }
+
+    #header h1 {
+        font-size: 2.5em;
+        height: auto;
+    }
+
+    main {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 2fr 280px;
+        grid-template-columns: 2fr 280px;
+    }
+
+    #side-bar {
+        margin-top: 50px;
+        padding: 0 36px 0 0 ;
+    }
+
+}
+
+@media screen and (min-width: 1001px) {
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #header {
+        height: 250px;
+    }
+
+    #header h1 {
+        font-size: 3em;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        height: auto;
+    }
+
+    main {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 2fr 310px;
+        grid-template-columns: 2fr 310px;
+    }
+
+    #side-bar {
+        margin-top: 50px;
+        padding: 0 36px 0 0 ;
+    }
+
+    #blog {
+        padding-top: 80px;
+        max-width: 860px;
+    }
+
+    #side-bar {
+        margin-top: 120px;
+    }
+
+}
